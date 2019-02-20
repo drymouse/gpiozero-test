@@ -15,6 +15,7 @@ def say_hello():
 
 button = Button(24, pull_up=False)
 
-button.when_pressed = say_hello
+button.when_pressed = led.on
+button.when_released = led.off
 
 pause()
